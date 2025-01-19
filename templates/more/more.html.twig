@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome!{% endblock %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.min.css">
+    </head>
+    
+    <body>
+        
+
+        <div class="container">
+            <h2 class="text-center mt-5">Mes Loisirs et Projets</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="jeunes.PNG" class="img-fluid" alt="Image 1">
+                    <p>Mes loisirs 1</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image2.jpg" class="img-fluid" alt="Image 2">
+                    <p>Mes loisirs 2</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image3.jpg" class="img-fluid" alt="Image 3">
+                    <p>Mes loisirs 3</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+{% endblock %}

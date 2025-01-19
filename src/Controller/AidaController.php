@@ -22,8 +22,7 @@ class AidaController extends AbstractController
     public function home(): Response
     {
         return $this->render('home/home.html.twig', [
-            'title' => "bienvenue",
-            'age' => 11
+            
         ]);
     }
     
@@ -52,5 +51,10 @@ class AidaController extends AbstractController
             
         ]);
         
-    }     
+    }   
+    #[Route('/more', name: 'app_more')]
+    public function more(): Response
+    {
+        return $this->render('more/more.html.twig');
+    }  
 }
