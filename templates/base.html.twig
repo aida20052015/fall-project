@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Mon site!{% endblock %}</title>
         <link rel= "stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.min.css">
         {% block stylesheets %}
         {% endblock %}
@@ -20,12 +20,12 @@
              <div class="collapse navbar-collapse" id="navbarColor01">
                  <ul class="navbar-nav me-auto">
                    <li class="nav-item">
-                      <a class="nav-link " href="/adja">Adja
+                      <a class="nav-link " href="/adja">Compétences
                       <span class="visually-hidden">(current)</span>
                       </a>
                       </li>
                    <li class="nav-item">
-                      <a class="nav-link" href="/awa">Awa</a>
+                      <a class="nav-link" href="/awa">Mon CV</a>
                     </li>
                  </ul>
                 
@@ -35,6 +35,15 @@
         
         {% block body %}{% endblock %}
         </div>
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; {{ "now"|date("Y") }} MonSite.com - Tous droits réservés.</p>
+    <p>Le contenu de ce site est protégé. Toute reproduction est interdite sans l'autorisation préalable.</p>
+    <p>
+        <a href="/conditions" class="text-white">Conditions d'utilisation</a> |
+        <a href="/confidentialites" class="text-white">Politique de confidentialité</a>
+    </p>
+</footer>
+
     {% block javascripts %} {% endblock %}    
     </body>  
 </html>

@@ -1,1 +1,102 @@
 {% extends 'base.html.twig' %}
+
+{% block title %}Mon CV - Réseaux et Télécommunications{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <!-- En-tête avec l'intitulé du poste -->
+        <header class="text-center mb-5">
+            <h1 class="display-4 font-weight-bold">Le Poste de Mes Rêves : Administrateur de réseaux</h1>
+            <p class="lead">Découvrez mon parcours, mes formations et mes expériences professionnelles dans le domaine des réseaux et des télécommunications.</p>
+        </header>
+        <!-- Section des diplômes -->
+         <section class="mb-5">
+            <h2 class="text-primary">Diplômes</h2>
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title">Baccalauréat Scientifique (S1)</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Lycée: Lycée Seydina Limamou Laye (LSLL) de Guédiawaye à Dakar(SENEGAL),Année: 2023/2024</h6>
+                </div>
+            </div>
+        <!-- Section Formations -->
+        <section class="mb-5">
+            <h2 class="text-primary">Formations</h2>
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">BUT R&T</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Université: IUT Jean Monnet de Roanne,Niveau: Première année,Année: 2024/2025</h6>
+                    <p class="card-text">Formation en systèmes informatiques et réseaux. Apprentissage de l'installation, de la configuration et de la maintenance des infrastructures réseaux. Développement de solutions logicielles adaptées aux besoins d'une entreprise.</p>
+                </div>
+            </div>
+           <section class="mb-5">
+            <h2 class="text-primary">Langues</h2>
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title"><p>Français - Courant</p><p>Anglais - Moyen</p></h5>
+                    
+                </div>
+            </div> 
+        </section>
+
+        <!-- Section Projets réalisés -->
+        <section class="mb-5">
+            <h2 class="text-primary">Expériences académiques</h2>
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Projets réalisés</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><p>Création d'un site web portant sur l'enfance.</p>
+                    <p> Création d'un autre site pour se présenter sur le Net.</p>
+                    <p> Création de réseaux LAN supplémentaires pour l'IUT.</p> 
+                </div>
+            </div>
+        
+        </section>
+        <!-- Section Volontariat -->
+        <section class="mb-5">
+            <h2 class="text-primary">Volontariat</h2>
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Membre de plusieurs organisations qui luttent pour le respect des droits des enfants et l'accomplissement de leurs devoirs</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><p>Membre du conseil national des enfants et jeunes de <a href="https://terredeshommessuisse.ch/"> terre des hommes suisse </a> (CNEJ/TDH) au SENGAL.</p>
+                    <p>Membre de l'ONG <a href="https://www.edensenegal.org/">EDEN</a> (Education et Développement de l' Enfant) au SENEGAL</p>
+                    
+                </div>
+            </div>
+            </section>
+        <!-- Section Compétences -->
+        <section class="mb-5">
+            <h2 class="text-primary">Compétences (Niveau 1)</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Administration des systèmes et réseaux :</strong> Configuration de serveurs, gestion des VLAN, routage, sécurité des réseaux.
+                </li>
+                <li class="list-group-item">
+                    <strong>Technologies : </strong> Cisco, Linux, Protocoles TCP/IP, DNS, DHCP...
+                </li>
+                <li class="list-group-item">
+                    <strong>Langages de programmation :</strong> Python, Bash, C++.
+                </li>
+                <li class="list-group-item">
+                    <strong>Compétences transversales :</strong> Résolution de problèmes, gestion du stress, travail en équipe, communication efficace,dynamysme.
+                </li>
+            </ul>
+        </section>
+        <!-- Section Centre d'intérêt -->
+         <section class="mb-5">
+            <h2 class="text-primary">Centres d'intérêt</h2>
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"><p>Lecture</p><p>Méditation</p><p>Sport</p><p>Ecriture</p><p>Améliorer mon ANGLAIS</p></h5>
+                    
+                </div>
+            </div>
+            </section>
+        <!-- Téléchargement du CV -->
+        <section class="text-center mt-5">
+            <h3>Téléchargez mon CV</h3>
+            <a href="/cv/pdf" class="btn btn-lg btn-success" download>
+                Télécharger mon CV (PDF)
+            </a>
+        </section>
+    </div>
+{% endblock %}
