@@ -1,1 +1,151 @@
 {% extends 'base.html.twig' %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon E-Portfolio</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.min.css">
+        <style>
+            .hero-section {
+                background-color: #f8f9fa;
+                padding: 100px 0;
+                text-align: center;
+            }
+
+            .card-project {
+                transition: transform 0.3s ease;
+            }
+
+            .card-project:hover {
+                transform: scale(1.05);
+            }
+
+            .footer-text {
+                font-size: 0.9em;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mon E-Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#about-me">À propos de moi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#compétences">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="about-me">
+            <div class="container">
+                <h1 class="display-4">Bienvenue sur mon e-portfolio</h1>
+                <p class="lead">Je suis une étudiante passionnée par les nouvelles technologies et les projets innovants.</p>
+                <a href="#compétences" class="btn btn-primary btn-lg mt-3">Voir mes compétences</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me" class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>À propos de moi</h2>
+                    <p>Je suis une étudiante passionnée par les réseaux et les télécommunications, avec un fort intérêt pour les technologies émergentes et leur impact sur le monde numérique. Mon parcours en BUT R&T m'a permis d'acquérir des compétences solides dans la gestion des réseaux, la sécurité informatique et les systèmes de communication. J'aime explorer de nouvelles technologies et participer à des projets techniques collaboratifs qui allient théorie et pratique. Mon objectif est de contribuer à des solutions innovantes dans le domaine des télécommunications et des infrastructures réseau.</p>
+                    <p>Mes compétences principales incluent :</p>
+                    <ul>
+                        <li>HTML, CSS</li>
+                        <li>Python, </li>
+                        <li>C++</li>
+                      
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="" class="card-img-top" alt="Projet 1">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="compétences" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Mes compétences</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card card-compétences">
+                            <img src="https://media.istockphoto.com/id/599903446/fr/photo/concept-de-technologie-de-communication-r%C3%A9seau-et-internet-int%C3%A9rieur-du-centre-de-donn%C3%A9es.jpg?s=612x612&w=0&k=20&c=RKnHlOiPnWY4nqUrELnIhakjU8pUlDTXn-ppSixdJ34=" class="card-img-top" alt="Projet 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Administer</h5>
+                                <p class="card-text">Description courte du projet 1. Ce projet consiste à développer une application de gestion des tâches avec React et Node.js.</p>
+                                <a href="#" class="btn btn-primary">Voir la compétence</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card card-compétences">
+                            <img src="https://media.istockphoto.com/id/849181820/fr/photo/gestion-des-serveurs-de-supercalculateur-homme.jpg?s=1024x1024&w=is&k=20&c=pSRPkNR7-gat1AgkfmixhAskPgybqmZJms68WK42zjg=" class="card-img-top" alt="Projet 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Programmer</h5>
+                                <p class="card-text">Description courte du projet 2. Ce projet consiste à créer une application web de portfolio avec HTML, CSS et JavaScript.</p>
+                                <a href="#" class="btn btn-primary">Voir la compétence</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card card-compétences">
+                            <img src="https://media.istockphoto.com/id/1170938285/fr/photo/r%C3%A9seau-de-t%C3%A9l%C3%A9communications-au-dessus-de-leurope-vu-depuis-lespace-avec-syst%C3%A8me-connect%C3%A9.webp?s=1024x1024&w=is&k=20&c=RotklsgLL66Hc94yp7Vco-pSC8uS7fmG-SY29LDSUBA=" class="card-img-top" alt="Projet 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Connecter</h5>
+                                <p class="card-text">Description courte du projet 3. Ce projet consiste à développer une API RESTful avec Flask pour la gestion des utilisateurs.</p>
+                                <a href="#" class="btn btn-primary">Voir la compétence</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container my-5">
+            <h2 class="text-center mb-4">Contactez-moi</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="ADJA AIDA NDIAYE FALL">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="adjaaidandiayefall@gmail.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Vous pouvez me contacter sur ce numéro 07 73 58 95"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </section>
+
+       
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+{% endblock %}
