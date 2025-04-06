@@ -3,35 +3,170 @@
 {% block title %}Mon site!{% endblock %}
 
 {% block body %}
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Mon site!</title>
-        <link rel="stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.min.css">
-    </head>
-    
-    <body>
-        
+<head>
+    <meta charset="UTF-8">
+    <title>Compétences et Objectifs</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.min.css">
+</head>
+<body>
 
-        <div class="container">
-            <h2 class="text-center mt-5">Mes Loisirs </h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="https://media.istockphoto.com/id/1339845062/fr/photo/int%C3%A9rieur-de-la-salle-de-lecture-ou-de-la-biblioth%C3%A8que-avec-fauteuil-en-cuir-%C3%A9tag%C3%A8re-et.webp?s=1024x1024&w=is&k=20&c=NRG9TmjaGKxzAo7uMRPMQfLAfzAS45uOF5v5RGt8f_0=" class="img-fluid" alt="Image 1">
-                    <p>Lecture</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="https://media.istockphoto.com/id/1567196149/fr/photo/main-stylo-et-%C3%A9criture-dans-un-cahier-avec-une-femme-daffaires-assise-%C3%A0-un-bureau-dans-son.webp?s=1024x1024&w=is&k=20&c=704ewUtBCF5TNvpXFG8zSw212gwRXOFNcPX0bjdraLA=" class="img-fluid" alt="Image 2">
-                    <p>Ecriture</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="https://media.istockphoto.com/id/1255236230/fr/photo/corps-esprit-%C3%A2me-esprit.webp?s=1024x1024&w=is&k=20&c=2T2nrgSuZaLjjR0Km2wvTCGr3g4PLBZDnXr7vlVF8Oc=" class="img-fluid" alt="Image 3">
-                    <p>Méditation</p>
+<div class="container my-5">
+    <h2 class="text-center mb-4">Compétences pour le parcours ROM</h2>
+
+    <div class="row">
+        <!-- Administration des réseaux -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-success">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Administration des réseaux</h5>
+                    <p class="card-text">
+                        Je sais configurer, superviser et dépanner des réseaux, compétences essentielles pour le parcours ROM. J’ai manipulé des services réseau comme :
+                    </p>
+                    <ul>
+                        <li><strong>DHCP</strong> : configuration d’un serveur DHCP pour l’attribution automatique des adresses IP.</li>
+                        <li><strong>DNS</strong> : mise en place d’un serveur DNS local et résolution de noms de domaines internes.</li>
+                        <li><strong>Ethernet</strong> : compréhension et configuration des connexions filaires, câblage RJ45, normes IEEE 802.3.</li>
+                        <li><strong>IPv4</strong> : plan d’adressage IP, sous-réseautage (CIDR, masque), routage statique et dynamique.</li>
+                        <li><strong>Wireshark</strong> : analyse de trames réseau pour détecter des anomalies ou comprendre les échanges protocolaires.</li>
+                    </ul>
+                    <p>
+                        J’ai aussi utilisé des outils comme Packet Tracer pour simuler des topologies complexes et pratiquer les configurations de routeurs et de switchs Cisco.
+                    </p>
                 </div>
             </div>
         </div>
-    </body>
+
+        <!-- Téléphonie et VoIP / ToIP -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-success">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Téléphonie et VoIP / ToIP</h5>
+                    <p class="card-text">
+                        La téléphonie sur IP (VoIP et ToIP) représente un domaine stratégique dans les réseaux modernes. Grâce à des outils comme <strong>3CX</strong>, j’ai acquis des compétences solides pour :
+                    </p>
+                    <ul>
+                        <li><strong>Installation d'un standard téléphonique virtuel</strong> : Création et gestion de comptes utilisateurs, groupes d'appels et de services de messagerie vocale.</li>
+                        <li><strong>Configuration SIP</strong> : Gestion des configurations de téléphones IP et intégration avec des systèmes tiers via le protocole SIP (Session Initiation Protocol).</li>
+                        <li><strong>Qualité de service (QoS)</strong> : Optimisation du trafic voix en configurant des priorités de paquet pour garantir la qualité des appels, même dans des environnements réseau saturés.</li>
+                        <li><strong>Analyse des appels VoIP</strong> : Utilisation de Wireshark pour capturer et analyser les paquets VoIP afin d’identifier des problèmes comme la latence, les pertes de paquets et les coupures d’appels.</li>
+                        <li><strong>Planification de l’adressage pour VoIP</strong> : Planification d'adresses IP et de sous-réseaux pour assurer une gestion efficace des ressources dans les infrastructures ToIP.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nouvelle ligne équilibrée : Connecter + Outils -->
+    <div class="row">
+        <!-- Connecter -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-success h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Connecter</h5>
+                    <p class="card-text">
+                        Je suis capable de connecter des équipements réseau et utilisateurs, en utilisant les protocoles et outils adaptés. J’ai appris à :
+                    </p>
+                    <ul>
+                        <li>Configurer les interfaces réseau sur des postes clients (adresse IP, passerelle, DNS).</li>
+                        <li>Connecter des équipements via Ethernet (câblage, switch, prises RJ45).</li>
+                        <li>Utiliser le protocole ARP pour la résolution d’adresses MAC/IP.</li>
+                        <li>Assurer la connectivité de bout en bout (ping, tracert, test de connectivité).</li>
+                        <li>Comprendre les bases des réseaux sans fil (Wi-Fi, sécurité WPA2, SSID).</li>
+                    </ul>
+                    <p>
+                        Ces compétences sont fondamentales pour le support aux utilisateurs et les déploiements sur le terrain.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outils -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-success h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Utilisation d’outils professionnels</h5>
+                    <p class="card-text">
+                        J’ai été initiée à l’usage de plusieurs outils essentiels pour l'administration réseau, le diagnostic et la téléphonie IP, notamment :
+                    </p>
+                    <ul>
+                        <li><strong>3CX</strong> : configuration de comptes SIP, création de groupes d'appels, gestion de la ToIP.</li>
+                        <li><strong>Packet Tracer</strong> : conception de topologies, configuration de routeurs/switchs, tests de connectivité.</li>
+                        <li><strong>Wireshark</strong> : capture et analyse de paquets réseau pour identifier les échanges DHCP, DNS, ARP, etc.</li>
+                        <li><strong>FileZilla</strong> : transfert de fichiers en FTP/SFTP dans des environnements sécurisés.</li>
+                        <li><strong>Putty</strong> : accès distant à des équipements réseau via SSH/Telnet.</li>
+                    </ul>
+                    <p>
+                        Ces outils m'ont permis de développer des compétences pratiques en configuration, analyse et résolution de problèmes réseau, ce qui est en parfaite cohérence avec les exigences du parcours ROM.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center my-4">Compétences à améliorer</h2>
+
+    <div class="row">
+        <!-- Compétence à améliorer 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-warning">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Programmation</h5>
+                    <p class="card-text">
+                        Je souhaite progresser en Python et HTML pour automatiser des tâches et créer des interfaces simples.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compétence à améliorer 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-warning">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Scripts Shell et Linux</h5>
+                    <p class="card-text">
+                        Bien que je comprenne les bases, je veux devenir plus autonome sur les systèmes Linux et les scripts bash.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nouvelle section centrée -->
+    <div class="text-center mt-4 mb-4">
+        <div class="alert alert-danger">
+            <h5 class="alert-heading">Compétences à renforcer : Sécurité, SSH, ACL et NAT</h5>
+            <p>
+                Je dois améliorer mes connaissances en sécurité réseau, notamment en :
+            </p>
+            <ul>
+                <li><strong>Connexion SSH</strong> : Apprendre à sécuriser et gérer l'accès distant à distance via SSH, comprendre la gestion des clés et des utilisateurs.</li>
+                <li><strong>ACL (Listes de Contrôle d'Accès)</strong> : Comprendre et configurer des ACL pour filtrer et contrôler le trafic réseau sur les routeurs et commutateurs.</li>
+                <li><strong>NAT (Network Address Translation)</strong> : Acquérir une compréhension approfondie de la configuration et de l’utilisation du NAT pour gérer les adresses IP privées et publiques, ainsi que la translation de port.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section Actions en cours et prévision -->
+    <div class="text-center mt-5 mb-4">
+        <div class="alert alert-info">
+            <h5 class="alert-heading">Actions en cours et prévisions pour l'amélioration de mes compétences</h5>
+            <p>
+                Pour progresser dans ces domaines, je mets en place les actions suivantes :
+            </p>
+            <ul>
+                <li><strong>Entraînement sur Packet Tracer</strong> : Je suis actuellement en train de reprendre les TD et TP pour renforcer mes connaissances sur la gestion des accès SSH, la configuration des ACL et l'utilisation du NAT.</li>
+                <li><strong>Pratique sur des équipements réels</strong> : Je prévois de configurer des environnements de test avec des équipements Cisco et des serveurs Linux pour appliquer les concepts de sécurité réseau que j'apprends.</li>
+                </ul>
+            <p>
+                Ces actions me permettront d'acquérir de l'expérience pratique et théorique afin de renforcer mes compétences dans ces domaines critiques.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</body>
 </html>
 {% endblock %}

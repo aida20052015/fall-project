@@ -1,22 +1,182 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Mon site!{% endblock %}
+{% block title %}Parcours ROM - Réseaux Opérateur et Multimédia{% endblock %}
 
 {% block body %}
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
         h1 {
             text-align: center;
+            margin-top: 40px;
+            color: #2c3e50;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .content p, .content ul {
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #2980b9;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 40px 0;
+            padding-left: 30px;
+            border-left: 3px solid #2980b9;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlide 0.8s ease forwards;
+        }
+
+        .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+        .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+        .timeline-item:nth-child(4) { animation-delay: 0.8s; }
+        .timeline-item:nth-child(5) { animation-delay: 1s; }
+
+        @keyframes fadeInSlide {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -11px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            background-color: #2980b9;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 0 4px rgba(41, 128, 185, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .timeline-description {
+            margin-left: 10px;
+        }
+
+        .info-box {
+            margin-top: 40px;
+            padding: 25px;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+        }
+
+        .info-box a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .info-box a:hover {
+            background-color: rgba(255, 255, 255, 0.35);
+        }
+
+        a.no-underline {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: 500;
+        }
+
+        a.no-underline:hover {
+            color: #1c5980;
         }
     </style>
-<h1>ADJA AIDA NDIAYE FALL GROUP TP B2</h1>
-<p>I'm 19 years old. I come from SENEGAL in Africa and I actually live in FRANCE most exactly in Saint-Etienne.</p>
-<p> I'm currently a freshman pursuing a bachlor degree in Networks and Telecommunications at the technology university of Roanne in FRANCE. </p> 
-<p> At the moment, I’m mainly focused on learning the basics of networking.How to set up and manage networks, as well as understanding the fundamentals of security. I’m really interested in how networks connect devices and help build the digital infrastructure we rely on every day. While I’m still in the early stages of my studies, I’ve already gained a solid understanding of telecommunications and how communication systems work. I’m excited to continue learning and improving my skills, and I look forward to exploring both fields in more depth. Outside of my studies, I enjoy tinkering with technology and keeping up with the latest trends in networking and tech.</p>
- <div class="container">
-            <!-- Section Pour en savoir plus -->
-            <div class="alert alert-info text-center mt-5" role="alert">
-                <p>Découvrez mes loisirs, mes passions, mes projets et bien plus encore !</p>
-                <!-- Lien vers une autre page (ex: loisirs) -->
-                <a class="nav-link" href="/more">Pour en savoir plus</a>
+
+    <h1>Mon Choix de Parcours : ROM</h1>
+
+    <div class="content">
+        <p>
+            Dans le cadre de ma deuxième année en licence Réseaux et Télécommunications à l’Université de Technologie de Roanne, j’ai choisi de m’orienter vers le parcours <strong>ROM – Réseaux Opérateur et Multimédia</strong>. Ce choix s’inscrit pleinement dans ma volonté de me spécialiser dans les technologies avancées des télécommunications, en lien direct avec les enjeux actuels du numérique.
+        </p>
+
+        <div class="section-title">Pourquoi ce choix ?</div>
+        <p>
+            Le parcours ROM offre une formation approfondie centrée sur l’infrastructure des réseaux d’opérateurs, la diffusion de contenus multimédias, ainsi que sur les architectures modernes de communication. Il permet d’acquérir une vision globale et pointue des systèmes permettant d’assurer la connectivité et la circulation fluide de l’information à grande échelle.
+        </p>
+
+        <div class="section-title">Compétences et apprentissages critiques</div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-title">AC11.01 – Maîtriser les lois fondamentales de l’électricité</div>
+                <div class="timeline-description">
+                    Comprendre les bases de l’électricité est essentiel pour intervenir en toute sécurité sur les équipements physiques du réseau. Cette compétence me permet d'assurer des connexions fiables et conformes.
+                </div>
             </div>
+
+            <div class="timeline-item">
+                <div class="timeline-title">AC11.03 – Configurer les fonctions de base du réseau local</div>
+                <div class="timeline-description">
+                    J’ai appris à configurer les paramètres fondamentaux d’un réseau local (IP, DHCP, passerelles), ce qui constitue la base de toute infrastructure réseau fonctionnelle.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-title">AC11.04 – Maîtriser les principes fondamentaux des systèmes d’exploitation</div>
+                <div class="timeline-description">
+                    Je suis désormais capable d’utiliser efficacement Linux et Windows pour gérer des services réseaux comme DNS, FTP ou SSH, tout en assurant leur bon fonctionnement.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-title">AC11.05 – Identifier les dysfonctionnements du réseau local</div>
+                <div class="timeline-description">
+                    Grâce à cette compétence, je peux diagnostiquer et résoudre des pannes à l’aide d’outils comme Wireshark ou des commandes réseaux, garantissant ainsi la continuité de service.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-title">AC11.06 – Installer un poste client et expliquer la procédure</div>
+                <div class="timeline-description">
+                    Je sais installer un poste utilisateur complet, en assurant la configuration système, la connectivité réseau et la documentation claire de chaque étape.
+                </div>
+            </div>
+        </div>
+
+        <p>
+            Plus qu’un simple parcours académique, ROM représente pour moi une réelle opportunité de me préparer à intégrer le monde professionnel dans des secteurs dynamiques tels que les télécoms, les opérateurs réseaux, ou l’ingénierie multimédia. Il constitue une étape déterminante vers mon objectif de devenir un acteur compétent et engagé dans le domaine des infrastructures numériques.
+        </p>
+    </div>
 {% endblock %}

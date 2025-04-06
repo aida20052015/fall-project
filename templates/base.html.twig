@@ -11,28 +11,30 @@
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-             <div class="container-fluid">
-             <a class="navbar-brand" href="/home">Accueil</a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarColor01">
-                 <ul class="navbar-nav me-auto">
-                   <li class="nav-item">
-                      <a class="nav-link " href="/adja">E-portfolio
-                      <span class="visually-hidden">(current)</span>
-                      </a>
-                      </li>
-                   <li class="nav-item">
-                      <a class="nav-link" href="/awa">Mon CV</a>
-                    </li>
-                    <li>
-                 </ul>
-                
-            </div>
-            
-        </nav>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand text-uppercase fs-7" href="/home">Choix de parcours</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarColor01">
+            <ul class="navbar-nav w-100 d-flex justify-content-evenly text-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase fs-7" style="letter-spacing: 1px;" href="/adja">E-portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase fs-7" style="letter-spacing: 1px;" href="/more">À améliorer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase fs-7" style="letter-spacing: 1px;" href="/awa">Mon CV</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
         
         {% block body %}{% endblock %}
         </div>
